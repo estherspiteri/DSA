@@ -49,10 +49,10 @@ public class TreeImplementation {
         }
     }
 
-public void add(int value) {
-    root = addRecursive(root, value);
-    treeDisplay(root);
-    System.out.println();
-    start = true;
-}
+    public void add(int value) {
+        root = addRecursive(root, value);
+        treeDisplay(root);
+        System.out.println();
+        start = true;
+    }
 }

@@ -28,11 +28,7 @@ public class Main {
         Four task4 = new Four();
         System.out.println("Task 4  a X b = c X d and a ≠ b ≠ c ≠ d : ");
         int [] A4 = g.intArrayGenerator(60, 1024, 1);
-//        //to generate array from 0 to 99
-//        int [] A4 = new int[100];
-//        for (int i = 0; i < A4.length; i++) {
-//            A4[i] = i+1;
-//        }
+
         task4.four(A4);
 
         System.out.println();

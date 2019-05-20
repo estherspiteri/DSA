@@ -25,6 +25,3 @@ public class Nine {
     }
 }
 
-//                while (count != A[i]){
-//                    count++;
-//                }

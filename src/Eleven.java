@@ -41,18 +41,18 @@ void sine(double x, int n){
     System.out.println("sin("+x+") = "+sine);
 }
 
-int factorial (int num){
-    //checking for standard 0! & 1!
-    if (num == 0 || num == 1){
-        return 1;
+    int factorial (int num){
+        //checking for standard 0! & 1!
+        if (num == 0 || num == 1){
+            return 1;
+        }
+
+        int result;
+
+        //recursive function to work out factorial of previous numbers
+        result = factorial(num-1)*num;
+        return result;
     }
-
-    int result;
-
-    //recursive function to work out factorial of previous numbers
-    result = factorial(num-1)*num;
-    return result;
-}
 }
 
 //does not hold for large values of n due to integer's size
