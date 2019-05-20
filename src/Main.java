@@ -15,6 +15,12 @@ public class Main {
         System.out.println("Task 3 array:");
         int[] A3 = g.intArrayGenerator(8, 20, 0);
         task3.three(A3);
+        System.out.println();
+
+        //passing sorted array
+        int [] A3Sorted = {1,2,3,4,5,6,7};
+        System.out.println("Sorted array:\n[ 1, 2, 3, 4, 5, 6, 7 ]");
+        task3.three(A3Sorted);
 
         System.out.println();
 

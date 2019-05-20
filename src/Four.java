@@ -38,12 +38,17 @@ public class Four {
 
         for (int i = 0; i < length; i++) {
             for (int j = i+1; j < length; j++) {
+                //if elements not equal
                 if (A[i] != A[j]) {
 
+                    //if key or product already exists
                     if (h.containsKey(A[i] * A[j])){
+                        //concatenate product to already existing ones
                         h.get(A[i] * A[j]).add(A[i] + " x " + A[j]);
                     }
+                    //if key does not exist
                     else{
+                        //creates new key
                         Set<String> set = new HashSet<>();
                         set.add(A[i] + " x " + A[j]);
 
@@ -56,12 +61,15 @@ public class Four {
         System.out.println(h);
         Set<Integer> keys = h.keySet();
 
-
+        //iterate through all the keys
         for(Integer key: keys){
+            //if more than one set of products
             if (h.get(key).size() != 1){
+                //if 2 sets of products output combinations
                 if (h.get(key).size() == 2){
                     System.out.println(h.get(key));
                 }
+                //output all combinations between the products
                 else {
                     int k = 0;
                     for (String s1 : h.get(key)) {
